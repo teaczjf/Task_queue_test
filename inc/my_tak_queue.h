@@ -50,7 +50,7 @@ public:
 //任务队列
 class AsyncExecQueue
 {
-private:
+public:
     size_t maxsz;
     size_t threads;
     mutable SpinMutex mtx;
@@ -60,6 +60,7 @@ private:
     {
         this->maxsz = 0;
     }
+
     bool pop(shared_ptr<WorkItem> &item)
     {
         std::lock_guard<SpinMutex> lk(mtx);
