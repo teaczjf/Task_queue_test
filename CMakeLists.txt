@@ -38,7 +38,7 @@ aux_source_directory ( . DIR_USR_SOURCE )
 aux_source_directory (  ${CMAKE_FEATURE_PATH}/easylogging/src DIR_USR_SOURCE )
 aux_source_directory (  ${CMAKE_FEATURE_PATH}/easylogging DIR_USR_SOURCE )
 
-# aux_source_directory ( ./src DIR_USR_SOURCE )
+aux_source_directory ( ./src DIR_USR_SOURCE )
 
 #set CC AR LD AS 编译参数
 set ( CMAKE_C_COMPILER $ENV{CC} )
