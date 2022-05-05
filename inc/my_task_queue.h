@@ -51,8 +51,8 @@ public:
 class AsyncExecQueue
 {
 public:
-    size_t maxsz;
-    size_t threads;
+    size_t maxsz;   //最大任务数
+    size_t threads; //最大线程数
     mutable SpinMutex mtx;
     std::queue<shared_ptr<WorkItem>> que;
 
