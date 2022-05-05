@@ -72,11 +72,11 @@ private:
 
 public:
     //实现单例模式
-    static AsyncExecQueue *Instance()
-    {
-        static AsyncExecQueue obj;
-        return &obj;
-    }
+    // static AsyncExecQueue *Instance()
+    // {
+    //     static AsyncExecQueue obj;
+    //     return &obj;
+    // }
 
 public:
     //中止任务处理
